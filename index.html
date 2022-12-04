@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="categories"></div>
+    <div class="products"></div>
+    <div class="details"></div>
+    <button id="myOrders" class="orderBtn">My orders</button>
+</div>
+<br>
+
+<div id='myForm'>
+    <form name="mainForm">
+        <br>
+        <label for="userName">Your name</label>
+        <input type="text" id="userName" name="fullName" placeholder="Enter your full name" required>
+        <br>
+        <label for="city">Select your city</label>
+        <select id="city" name="town" required>
+            <option value="Berlin">Berlin</option>
+            <option value="Frankfurt Oder">Frankfurt Oder</option>
+            <option value="Munich">Munich</option>
+            <option value="Frankfurt am Main">Frankfurt am Main</option>
+        </select>
+        <br>
+        <label for="deliveryPoint">Enter your post</label>
+        <input type="text" id="deliveryPoint" name="delivery" placeholder="Enter delivery point" required>
+        <br>
+
+        <input type="radio" name="card" id="option1" value="Bank Card" checked>
+        <label for="option1">Pay by card</label>
+        <br>
+        <input type="radio" name="card" id="option2" value="CASH" checked>
+        <label for="option2">Pay by cash</label>
+        <br>
+        <input id="quantity" type="number" name="amount" placeholder="quantity" required/>
+        <label for="quantity"></label>
+
+
+        <br>
+        <textarea id="comment" name="comment"></textarea>
+        <label for="comment"></label>
+
+
+        <br>
+        <button id="submitBtn" class="btn btn-success">Submit</button>
+
+    </form>
+
+    <div class="check" id="checking">Please, fill in ALL fields</div>
+</div>
+<div id="dataItems"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

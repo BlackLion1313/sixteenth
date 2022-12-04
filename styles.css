@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex-grow: 1;
+  border: 1px solid black;
+  min-height: 20px;
+}
+#myForm {
+  display: none;
+}
+.check {
+  display: none ;
+  color: red;
+  font-weight: bold;
+}
+.orderBtn {
+  border-radius: 10px;
+  height: 50px;
+}
